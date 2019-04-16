@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GPTrashCleaner.exe" version="1.0.0.0" publicKeyToken="c20644cf8c2e9365" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GPTrashCleaner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GPTrashCleaner.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GPTrashCleaner.exe" size="7672">
+      <assemblyIdentity name="GPTrashCleaner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>t5EnegZQGexcBeMep33pRCzNdHcQJW9wGbwU+406iO8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="GPTrashCleaner.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rl5/qDc7Jz+tB+BIbOv9iMGPlRe6YJwrjmU09dnlPcs=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-USPUS7I\GauravPun" issuerKeyHash="67530df665ed040529a4c5ebb7c40c0792ee1f88" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kYzSpjrdjcvaBY3VVmyX3qa4HvV41S+r9JWQr1Wz6hE=</DigestValue></Reference></SignedInfo><SignatureValue>c6kvAaR5F7zwhxYA2jucCq2EKo1Fe5A4wqc1b4n45IxsnJ3lBf2A0wQF7L6wlfsirgKK3XkXtz2yNtIyhJQWnU4TYxa5lkL4kmcqS8GequYbU7j43UdxdewDhEjre3kVGJukfR0T3+jAjNMSm1KGwRlZtCsXVbPYtJxzhCHJtHw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1oqhR678tGWdBDbBFFVLi+QHNX6uwvENs5jeE3CqFf1lzCRVbvadGcur5/tQu1cu4ODd3TvNoM1ZZiZW8+jS1sLskddANXrTQusgdv6v5nlm4vSDJ0zt7IzM7NEbmwwSoxRDc9Km/ozADP7Wm/9f2ge21ibe8BPYju5Q2Gig8PU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="11eab355af9095f4ab2fd578f51eb8a6de976c56d58d05dacb8ddd3aa6d28c91" Description="" Url=""><as:assemblyIdentity name="GPTrashCleaner.exe" version="1.0.0.0" publicKeyToken="c20644cf8c2e9365" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-USPUS7I\GauravPun</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>UARAGuajBhmlWSGAafJtSbYMMCjDEIWJmTsiQ7AU8Yo=</DigestValue></Reference></SignedInfo><SignatureValue>YqwvZ7TQObzt80Plu45U3L0btzeHDmghMKRrP6q6564YcgSu1TG3ms8AY+hDsEZSWMdspZCyxinAQQCDPt81xBZ8rHkt71AJJq8h6TJqrNLc6Cf5mxMSDZ6Y8S3bnfT1QrAA+ssGCVWngQpHxhOZzv2FLWP5YoAh4ghU1wh48Rc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1oqhR678tGWdBDbBFFVLi+QHNX6uwvENs5jeE3CqFf1lzCRVbvadGcur5/tQu1cu4ODd3TvNoM1ZZiZW8+jS1sLskddANXrTQusgdv6v5nlm4vSDJ0zt7IzM7NEbmwwSoxRDc9Km/ozADP7Wm/9f2ge21ibe8BPYju5Q2Gig8PU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQZQk/kAryzLdEkiezVhpRHzANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtAFUAUwBQAFUAUwA3AEkAXABHAGEAdQByAGEAdgBQAHUAbjAeFw0xOTA0MTYyMTQ3MjhaFw0yMDA0MTYwMzQ3MjhaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0AVQBTAFAAVQBTADcASQBcAEcAYQB1AHIAYQB2AFAAdQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWiqFHrvy0ZZ0ENsEUVUuL5Ac1fq7C8Q2zmN4TcKoV/WXMJFVu9p0Zy6vn+1C7Vy7g4N3dO82gzVlmJlbz6NLWwuyR10A1etNC6yB2/q/meWbi9IMnTO3sjMzs0RubDBKjFENz0qb+jMAM/tab/1/aB7bWJt7wE9iO7lDYaKDw9QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABS+F9Y2Am7x5v3Te10vMvUiuSuZwy4fsLqMnB/oke+IqCQPXLaWsa7v1g2A8yLkXE5bDLr3Afh4gQm6ndo95rt7MQm9xZeeaEXQya6nywLV0uCkKIlTqp/JbIEkWLOuzWkB9C11x73CxfuGaHCcGEErR1ckO30AgNeH+4eeni0c</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

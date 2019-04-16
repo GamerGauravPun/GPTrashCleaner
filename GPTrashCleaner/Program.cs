@@ -40,21 +40,12 @@ namespace GPTrashCleaner
             Console.WriteLine("");
             Console.Write("  > ");
 
-            try
-            {
-                GetInfos();
-            }
-            catch
-            {
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("ERROR");
-            }
+            GetInfos();
         }
 
         static void GetInfos() {
 
-            if (Directory.GetFiles(AppContext.BaseDirectory + "LocSettings") != null)
+            try
             {
                 Console.WriteLine("Found!");
                 perTempLoc = File.ReadAllText(AppContext.BaseDirectory + @"LocSettings\loc1.wow");
@@ -70,7 +61,7 @@ namespace GPTrashCleaner
                 preFils = Directory.GetFiles(perTempLoc);
                 preFols = Directory.GetDirectories(perTempLoc);
             }
-            else {
+            catch {
                 Console.WriteLine("NotFound!");
                 perTempFils = Directory.GetFiles(@"C:\Users\GauravPun\Desktop\tmp\");
                 perTempFols = Directory.GetDirectories(@"C:\Users\GauravPun\Desktop\tmp\");
@@ -82,46 +73,7 @@ namespace GPTrashCleaner
                 preFols = Directory.GetDirectories(@"C:\Users\GauravPun\Desktop\tmp3\");
             }
 
-
-            bool errorFound = false;
-
-            //Search for
-            string[] S = new string[] {
-                AppContext.BaseDirectory + @"LocSettings\loc1.wow",
-                AppContext.BaseDirectory + @"LocSettings\loc2.wow",
-                AppContext.BaseDirectory + @"LocSettings\loc3.wow"
-            };
-
-            try {
-                string[] SSame = Directory.GetFiles(AppContext.BaseDirectory + "LocSettings");
-
-                for (int i = 0; i < S.Length; i++)
-                {
-                    try
-                    {
-                        if (SSame[i] == S[i]){ } // Scan the files
-                    }
-                    catch
-                    {
-                        errorFound = true;
-                        Console.Clear();
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("ERROR !");
-
-                        Console.WriteLine("NotFound : " + "loc" + (i + 1) + ".wow");
-                        break;
-                    }
-                }
-            }
-            catch {
-                errorFound = true;
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Error....!");
-                Console.WriteLine("(*_*)!");
-            }
-
-            if (Console.ReadLine().ToUpper() == "YES" && !errorFound)
+            if (Console.ReadLine().ToUpper() == "YES")
             {
                 Console.Clear();
                 Delete1(perTempFils, perTempFols);
