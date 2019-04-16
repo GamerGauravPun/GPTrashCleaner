@@ -63,14 +63,15 @@ namespace GPTrashCleaner
             }
             catch {
                 Console.WriteLine("NotFound!");
-                perTempFils = Directory.GetFiles(@"C:\Users\GauravPun\Desktop\tmp\");
-                perTempFols = Directory.GetDirectories(@"C:\Users\GauravPun\Desktop\tmp\");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                perTempFils = Directory.GetFiles(@"C:\Users\GAURAV~1\AppData\Local\Temp\");
+                perTempFols = Directory.GetDirectories(@"C:\Users\GAURAV~1\AppData\Local\Temp\");
 
-                tempFils = Directory.GetFiles(@"C:\Users\GauravPun\Desktop\tmp2\");
-                tempFols = Directory.GetDirectories(@"C:\Users\GauravPun\Desktop\tmp2\");
+                tempFils = Directory.GetFiles(@"C:\Windows\Temp\");
+                tempFols = Directory.GetDirectories(@"C:\Windows\Temp\");
 
-                preFils = Directory.GetFiles(@"C:\Users\GauravPun\Desktop\tmp3\");
-                preFols = Directory.GetDirectories(@"C:\Users\GauravPun\Desktop\tmp3\");
+                preFils = Directory.GetFiles(@"C:\Windows\Prefetch\");
+                preFols = Directory.GetDirectories(@"C:\Windows\Prefetch\");
             }
 
             if (Console.ReadLine().ToUpper() == "YES")
