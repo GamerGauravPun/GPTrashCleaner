@@ -10,11 +10,12 @@ namespace GPTrashCleaner
 {
     class Program
     {
-        static List<string> otherFiles = new List<string>();
+        static List<string> otherFiles;
 
         static void Main(string[] args)
         {
             Welcome(Environment.UserName);
+            otherFiles = new List<string>();
         }
 
         static void Welcome(string name) {
@@ -42,27 +43,7 @@ namespace GPTrashCleaner
         }
 
         static void Delete(string[] fileLoc, string[] folderLoc) {
-            for (int i = 0; i < fileLoc.Length; i++) {
-                try
-                {
-                    File.Delete(fileLoc[i]);
-                }
-                catch {
 
-                }
-            }
-
-            for (int i = 0; i < folderLoc.Length; i++) {
-                try
-                {
-                    Directory.Delete(folderLoc[i]);
-                }
-                catch
-                {
-                    string[] OFs = Directory.GetFiles(folderLoc[i]);
-                    //otherFiles.Add(OFs[i]);
-                }
-            }
         }
     }
 }

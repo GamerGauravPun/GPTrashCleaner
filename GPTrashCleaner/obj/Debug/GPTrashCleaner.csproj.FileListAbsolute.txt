@@ -5,3 +5,10 @@ F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashClea
 F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.csproj.CoreCompileInputs.cache
 F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.exe
 F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.pdb
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\bin\Debug\GPTrashCleaner.exe.config
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\bin\Debug\GPTrashCleaner.exe
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\bin\Debug\GPTrashCleaner.pdb
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.csprojAssemblyReference.cache
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.csproj.CoreCompileInputs.cache
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.exe
+C:\Users\GauravPun\Documents\GitHub\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.pdb
