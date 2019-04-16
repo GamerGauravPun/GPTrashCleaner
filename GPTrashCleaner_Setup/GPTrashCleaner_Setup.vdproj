@@ -303,7 +303,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GPTrashCleaner"
         "ProductCode" = "8:{5057CC6B-6400-41F1-9B8C-9B5C723BA11E}"
-        "PackageCode" = "8:{61848764-D4A5-4879-ADA9-594AB3AD899B}"
+        "PackageCode" = "8:{CA19BB1B-B2ED-4911-99C6-101AF1448D97}"
         "UpgradeCode" = "8:{5478898A-77FF-45F5-9719-04D6934C1EB2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
