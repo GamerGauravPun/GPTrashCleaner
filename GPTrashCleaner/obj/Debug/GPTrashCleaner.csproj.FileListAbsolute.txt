@@ -1,0 +1,7 @@
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\bin\Debug\GPTrashCleaner.exe.config
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\bin\Debug\GPTrashCleaner.exe
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\bin\Debug\GPTrashCleaner.pdb
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.csprojAssemblyReference.cache
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.csproj.CoreCompileInputs.cache
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.exe
+F:\Gaurav\Others\c# PRACTICE\GPTrashCleaner\GPTrashCleaner\obj\Debug\GPTrashCleaner.pdb
