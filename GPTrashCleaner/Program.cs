@@ -69,8 +69,6 @@ namespace GPTrashCleaner
 
                 preFils = Directory.GetFiles(perTempLoc);
                 preFols = Directory.GetDirectories(perTempLoc);
-
-                Console.WriteLine(perTempLoc);
             }
             else {
                 Console.WriteLine("NotFound!");
