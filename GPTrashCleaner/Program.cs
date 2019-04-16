@@ -10,6 +10,8 @@ namespace GPTrashCleaner
 {
     class Program
     {
+        static float Percent;
+
         static List<string> otherFiles;
 
         static void Main(string[] args)
@@ -19,31 +21,61 @@ namespace GPTrashCleaner
         }
 
         static void Welcome(string name) {
-            Console.WriteLine("# You want to clean trash ? " + name + "!");
-            //Console.ReadLine();
-
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("  # You want to clean trash ? " + name + "!");
             GetInfos();
         }
 
         static void GetInfos() {
-            string[] fils = Directory.GetFiles(@"C:\Users\GAURAV~1\AppData\Local\Temp\");
-            string[] fols = Directory.GetDirectories(@"C:\Users\GAURAV~1\AppData\Local\Temp\");
+            string[] fils = Directory.GetFiles(@"C:\Users\GauravPun\Desktop\TMP\");
+            string[] fols = Directory.GetDirectories(@"C:\Users\GauravPun\Desktop\TMP\");
 
             for (int i = 0; i < fils.Length; i++) {
+                Thread.Sleep(200);
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(fils[i]);
             }
 
             for (int i = 0; i < fols.Length; i++) {
+                Thread.Sleep(200);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine(fols[i]);
             }
 
-            Delete(fils, fols);
+            Percent = (float)(fils.Length + fols.Length);
+            float A = 100 / Percent;
+
+            Console.WriteLine(A);
 
             Console.ReadLine();
+            Delete(fils, fols);
         }
 
-        static void Delete(string[] fileLoc, string[] folderLoc) {
+        static void Delete(string[] filesLoc, string[] foldersLoc) {
+            for (int i = 0; i < filesLoc.Length; i++) {
+                try
+                {
+                    //File.Delete(filesLoc[i]);
+                }
+                catch {
 
+                }
+            }
+
+            for (int i = 0; i < filesLoc.Length; i++)
+            {
+                try
+                {
+
+                }
+                catch {
+                }
+            }
+
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Done!");
+            Console.ReadLine();
         }
     }
 }
