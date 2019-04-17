@@ -17,6 +17,8 @@ namespace GPTrashCleaner
         static string[] preFils;
         static string[] preFols;
 
+        static bool tempIsFound = true;
+
         static void Main(string[] args)
         {
             Welcome(Environment.UserName);
@@ -37,11 +39,10 @@ namespace GPTrashCleaner
             Console.WriteLine("");
             Console.Write("  > ");
 
-            DirectorySecurity dsecurity = Directory.GetAccessControl(@"C:\Windows\Prefetch");
-            FileSystemAccessRule accessRule = new FileSystemAccessRule(Environment.UserName, FileSystemRights.FullControl, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.None, AccessControlType.Allow);
-            dsecurity.AddAccessRule(accessRule);
-
-            Directory.SetAccessControl(@"C:\Windows\Prefetch", dsecurity);
+            //DirectorySecurity dsecurity = Directory.GetAccessControl(@"C:\Windows\Prefetch");
+            //FileSystemAccessRule accessRule = new FileSystemAccessRule(Environment.UserName, FileSystemRights.FullControl, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.None, AccessControlType.Allow);
+            //dsecurity.AddAccessRule(accessRule);
+            //Directory.SetAccessControl(@"C:\Windows\Prefetch", dsecurity);
 
             try
             {
@@ -61,8 +62,14 @@ namespace GPTrashCleaner
                 perTempFils = Directory.GetFiles(@"C:\Users\" + Environment.UserName + @"\AppData\Local\Temp\");
                 perTempFols = Directory.GetDirectories(@"C:\Users\" + Environment.UserName + @"\AppData\Local\Temp\");
 
-                tempFils = Directory.GetFiles(@"C:\Windows\Temp\");
-                tempFols = Directory.GetDirectories(@"C:\Windows\Temp\");
+                try
+                {
+                    tempFils = Directory.GetFiles(@"C:\Windows\Temp\");
+                    tempFols = Directory.GetDirectories(@"C:\Windows\Temp\");
+                }
+                catch {
+                    tempIsFound = false;
+                }
 
                 preFils = Directory.GetFiles(@"C:\Windows\Prefetch\");
                 preFols = Directory.GetDirectories(@"C:\Windows\Prefetch\");
@@ -90,15 +97,15 @@ namespace GPTrashCleaner
                 try
                 {
                     Thread.Sleep(20);
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     File.Delete(filesLoc[i]);
                     Console.WriteLine(filesLoc[i]);
                 }
                 catch {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write(filesLoc[i]);
                     Console.WriteLine("");
                 }
@@ -113,16 +120,22 @@ namespace GPTrashCleaner
                     Console.WriteLine(foldersLoc[i]);
                 }
                 catch {
-                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed; ;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write(foldersLoc[i]);
                     Console.WriteLine("");
                 }
             }
 
-            Delete2(tempFils, tempFols);
+            if (tempIsFound)
+            {
+                Delete2(tempFils, tempFols);
+            }
+            else {
+                Delete3(preFils, preFols);
+            }
         }
 
         static void Delete2(string[] filesLoc, string[] foldersLoc)
@@ -141,10 +154,10 @@ namespace GPTrashCleaner
                 }
                 catch
                 {
-                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed; ;
+                    Console.ForegroundColor = ConsoleColor.Cyan; ;
                     Console.Write(filesLoc[i]);
                     Console.WriteLine("");
                 }
@@ -160,10 +173,10 @@ namespace GPTrashCleaner
                 }
                 catch
                 {
-                    Console.ForegroundColor = ConsoleColor.Cyan;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed; ;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write(foldersLoc[i]);
                     Console.WriteLine("");
                 }
@@ -182,16 +195,16 @@ namespace GPTrashCleaner
                 try
                 {
                     Thread.Sleep(20);
-                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     File.Delete(filesLoc[i]);
                     Console.WriteLine(filesLoc[i]);
                 }
                 catch
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed; ;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write(filesLoc[i]);
                     Console.WriteLine("");
                 }
@@ -207,10 +220,10 @@ namespace GPTrashCleaner
                 }
                 catch
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkCyan;
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed; ;
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.Write(foldersLoc[i]);
                     Console.WriteLine("");
                 }

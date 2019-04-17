@@ -15,8 +15,14 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0E9E64C0E7644CF3835BABE33647E5EB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
-        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
+        "OwnerKey" = "8:_0E9E64C0E7644CF3835BABE33647E5EB"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -27,20 +33,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0E9E64C0E7644CF3835BABE33647E5EB"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -246,23 +246,23 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GPTrashCleaner"
         "ProductCode" = "8:{5057CC6B-6400-41F1-9B8C-9B5C723BA11E}"
-        "PackageCode" = "8:{67C55C57-0337-42B1-8DCB-DB04541503BC}"
+        "PackageCode" = "8:{E9F4C81D-1EE8-4DAD-B998-DAF4BB072D70}"
         "UpgradeCode" = "8:{5478898A-77FF-45F5-9719-04D6934C1EB2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:GauPun"
-        "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
+        "ARPHELPTELEPHONE" = "8:No"
+        "ARPHELPLINK" = "8:www.gaupun.ga"
         "Title" = "8:TrashCleanerSetup"
-        "Subject" = "8:"
+        "Subject" = "8:Junk Cleaner"
         "ARPCONTACT" = "8:GauPun"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:"
-        "ARPURLINFOABOUT" = "8:"
+        "ARPCOMMENTS" = "8:Clean your PC !"
+        "ARPURLINFOABOUT" = "8:www.gaupun.ga"
         "ARPPRODUCTICON" = "8:_A865B7EC72524746847882830861A989"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -366,7 +366,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_40AB6B4AAD194FA5942A856C91C1FD8B"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7C12268ECFEB439FA6AB92AC13C587DB"
             {
             "Name" = "8:GPTrashCleaner"
             "Arguments" = "8:"
@@ -374,13 +374,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
-            "Folder" = "8:_F8A4E7BF7E0C4A9D8DE7D0CDEB569211"
+            "Target" = "8:_0E9E64C0E7644CF3835BABE33647E5EB"
+            "Folder" = "8:_316D2B3608C54F4BBF9D62BD9144D22F"
             "WorkingFolder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
             "Icon" = "8:_A865B7EC72524746847882830861A989"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F0C609505F234A968E85D5C829471CCC"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BBA07FA70D684346938CDCE565EEEA61"
             {
             "Name" = "8:GPTrashCleaner"
             "Arguments" = "8:"
@@ -388,8 +388,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
-            "Folder" = "8:_316D2B3608C54F4BBF9D62BD9144D22F"
+            "Target" = "8:_0E9E64C0E7644CF3835BABE33647E5EB"
+            "Folder" = "8:_F8A4E7BF7E0C4A9D8DE7D0CDEB569211"
             "WorkingFolder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
             "Icon" = "8:_A865B7EC72524746847882830861A989"
             "Feature" = "8:"
@@ -793,7 +793,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FABEDD6CD3934E5AA0F2826B20011F61"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0E9E64C0E7644CF3835BABE33647E5EB"
             {
             "SourcePath" = "8:..\\GPTrashCleaner\\obj\\Debug\\GPTrashCleaner.exe"
             "TargetName" = "8:"
