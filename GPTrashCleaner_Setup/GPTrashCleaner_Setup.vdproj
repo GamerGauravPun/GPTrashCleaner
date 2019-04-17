@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_2EDE04A406D04243B2256B47238A4CA8"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
+        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
-        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
+        "MsmKey" = "8:_A865B7EC72524746847882830861A989"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
+        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
+        "OwnerKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -100,6 +100,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
     }
@@ -130,26 +138,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2EDE04A406D04243B2256B47238A4CA8"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Martz90-Circle-Addon1-Memory-cleaner.ico"
-            "TargetName" = "8:Memorycleaner.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_43EA0B536B6526F0256469BBED53FC7B"
             {
             "AssemblyRegister" = "3:1"
@@ -179,6 +167,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A865B7EC72524746847882830861A989"
+            {
+            "SourcePath" = "8:..\\cleanerIcon.ico"
+            "TargetName" = "8:cleanerIcon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -255,7 +263,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_2EDE04A406D04243B2256B47238A4CA8"
+        "ARPPRODUCTICON" = "8:_A865B7EC72524746847882830861A989"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -369,7 +377,7 @@
             "Target" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
             "Folder" = "8:_F8A4E7BF7E0C4A9D8DE7D0CDEB569211"
             "WorkingFolder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
-            "Icon" = "8:_2EDE04A406D04243B2256B47238A4CA8"
+            "Icon" = "8:_A865B7EC72524746847882830861A989"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F0C609505F234A968E85D5C829471CCC"
@@ -383,7 +391,7 @@
             "Target" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
             "Folder" = "8:_316D2B3608C54F4BBF9D62BD9144D22F"
             "WorkingFolder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
-            "Icon" = "8:_2EDE04A406D04243B2256B47238A4CA8"
+            "Icon" = "8:_A865B7EC72524746847882830861A989"
             "Feature" = "8:"
             }
         }

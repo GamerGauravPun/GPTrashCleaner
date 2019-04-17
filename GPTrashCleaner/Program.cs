@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
 using System.IO;
+using System.Security.AccessControl;
+using System.Security.Principal;
 
 namespace GPTrashCleaner
 {
@@ -32,8 +34,14 @@ namespace GPTrashCleaner
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Yes or No ! and press Enter !");
             Console.WriteLine("");
-            Console.WriteLine();
+            Console.WriteLine("");
             Console.Write("  > ");
+
+            DirectorySecurity dsecurity = Directory.GetAccessControl(@"C:\Windows\Prefetch");
+            FileSystemAccessRule accessRule = new FileSystemAccessRule(Environment.UserName, FileSystemRights.FullControl, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.None, AccessControlType.Allow);
+            dsecurity.AddAccessRule(accessRule);
+
+            Directory.SetAccessControl(@"C:\Windows\Prefetch", dsecurity);
 
             try
             {
@@ -59,9 +67,10 @@ namespace GPTrashCleaner
                 preFils = Directory.GetFiles(@"C:\Windows\Prefetch\");
                 preFols = Directory.GetDirectories(@"C:\Windows\Prefetch\");
             }
-            catch {
+            catch (Exception ex){
+                Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("ERROR!");
+                Console.WriteLine("ERROR!!" + ex.Message);
                 Console.ReadLine();
             }
 
