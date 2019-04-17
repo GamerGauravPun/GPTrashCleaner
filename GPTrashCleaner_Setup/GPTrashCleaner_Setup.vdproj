@@ -15,18 +15,6 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_12328D08642441FDB97E67756306BC97"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_1A8E52DC6F4E422EB3D2C076C6F3FE5F"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_2EDE04A406D04243B2256B47238A4CA8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -34,18 +22,12 @@
         "Entry"
         {
         "MsmKey" = "8:_43EA0B536B6526F0256469BBED53FC7B"
-        "OwnerKey" = "8:_FE07F24F969B4A84BA956BEE9B2EED17"
+        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6B91B63025C24E059037824C6A2977BF"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FE07F24F969B4A84BA956BEE9B2EED17"
+        "MsmKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -58,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FE07F24F969B4A84BA956BEE9B2EED17"
+        "OwnerKey" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -79,6 +61,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -95,6 +93,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -124,46 +130,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_12328D08642441FDB97E67756306BC97"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\loc2.wow"
-            "TargetName" = "8:loc2.wow"
-            "Tag" = "8:"
-            "Folder" = "8:_7F5A1B3362844943B1A0FC4219D536ED"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1A8E52DC6F4E422EB3D2C076C6F3FE5F"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\loc3.wow"
-            "TargetName" = "8:loc3.wow"
-            "Tag" = "8:"
-            "Folder" = "8:_7F5A1B3362844943B1A0FC4219D536ED"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2EDE04A406D04243B2256B47238A4CA8"
             {
             "SourcePath" = "8:..\\..\\..\\..\\Downloads\\Martz90-Circle-Addon1-Memory-cleaner.ico"
@@ -215,26 +181,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6B91B63025C24E059037824C6A2977BF"
-            {
-            "SourcePath" = "8:..\\..\\..\\..\\Desktop\\loc1.wow"
-            "TargetName" = "8:loc1.wow"
-            "Tag" = "8:"
-            "Folder" = "8:_7F5A1B3362844943B1A0FC4219D536ED"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -262,17 +208,6 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_7F5A1B3362844943B1A0FC4219D536ED"
-                    {
-                    "Name" = "8:LocSettings"
-                    "AlwaysCreate" = "11:FALSE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_EF63DD6748574C49B55D3CEEAD70ECBB"
-                        "Folders"
-                        {
-                        }
-                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_F8A4E7BF7E0C4A9D8DE7D0CDEB569211"
@@ -303,7 +238,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GPTrashCleaner"
         "ProductCode" = "8:{5057CC6B-6400-41F1-9B8C-9B5C723BA11E}"
-        "PackageCode" = "8:{CA19BB1B-B2ED-4911-99C6-101AF1448D97}"
+        "PackageCode" = "8:{67C55C57-0337-42B1-8DCB-DB04541503BC}"
         "UpgradeCode" = "8:{5478898A-77FF-45F5-9719-04D6934C1EB2}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -423,7 +358,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_34BB6B6E89444C0196F08FF438A761CE"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_40AB6B4AAD194FA5942A856C91C1FD8B"
             {
             "Name" = "8:GPTrashCleaner"
             "Arguments" = "8:"
@@ -431,13 +366,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_FE07F24F969B4A84BA956BEE9B2EED17"
-            "Folder" = "8:_316D2B3608C54F4BBF9D62BD9144D22F"
+            "Target" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
+            "Folder" = "8:_F8A4E7BF7E0C4A9D8DE7D0CDEB569211"
             "WorkingFolder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
             "Icon" = "8:_2EDE04A406D04243B2256B47238A4CA8"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7521A1160D5047DFA156F13521F2B39A"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F0C609505F234A968E85D5C829471CCC"
             {
             "Name" = "8:GPTrashCleaner"
             "Arguments" = "8:"
@@ -445,8 +380,8 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_FE07F24F969B4A84BA956BEE9B2EED17"
-            "Folder" = "8:_F8A4E7BF7E0C4A9D8DE7D0CDEB569211"
+            "Target" = "8:_FABEDD6CD3934E5AA0F2826B20011F61"
+            "Folder" = "8:_316D2B3608C54F4BBF9D62BD9144D22F"
             "WorkingFolder" = "8:_71EE6C8777AD4E56A9DC25494E532949"
             "Icon" = "8:_2EDE04A406D04243B2256B47238A4CA8"
             "Feature" = "8:"
@@ -850,7 +785,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FE07F24F969B4A84BA956BEE9B2EED17"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_FABEDD6CD3934E5AA0F2826B20011F61"
             {
             "SourcePath" = "8:..\\GPTrashCleaner\\obj\\Debug\\GPTrashCleaner.exe"
             "TargetName" = "8:"

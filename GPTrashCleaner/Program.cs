@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 
@@ -10,10 +6,6 @@ namespace GPTrashCleaner
 {
     class Program
     {
-        static string perTempLoc;
-        static string tempLoc;
-        static string prefetchLoc;
-
         static string[] perTempFils;
         static string[] perTempFols;
 
@@ -29,15 +21,18 @@ namespace GPTrashCleaner
         }
 
         static void Welcome(string name) {
+
+            Console.Title = "GP Trash Cleaner";
+
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("  # Do you want to clean trash ? " + name + "!");
+            Console.WriteLine("  # Do you want to remove trash ? " + name + "!");
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("    Type: ");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.Write("Yes or No !");
+            Console.Write("Yes or No ! and press Enter !");
             Console.WriteLine("");
-            Console.WriteLine("");
+            Console.WriteLine();
             Console.Write("  > ");
 
             try
@@ -47,33 +42,16 @@ namespace GPTrashCleaner
             catch {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("ERROR!");
+                Console.ReadLine();
             }
-            
         }
 
         static void GetInfos() {
 
             try
             {
-                //Console.WriteLine("Found!");
-                perTempLoc = File.ReadAllText(AppContext.BaseDirectory + @"LocSettings\loc1.wow");
-                tempLoc = File.ReadAllText(AppContext.BaseDirectory + @"LocSettings\loc2.wow");
-                prefetchLoc = File.ReadAllText(AppContext.BaseDirectory + @"LocSettings\loc3.wow");
-
-                perTempFils = Directory.GetFiles(perTempLoc);
-                perTempFols = Directory.GetDirectories(perTempLoc);
-
-                tempFils = Directory.GetFiles(tempLoc);
-                tempFols = Directory.GetDirectories(tempLoc);
-
-                preFils = Directory.GetFiles(perTempLoc);
-                preFols = Directory.GetDirectories(perTempLoc);
-            }
-            catch {
-                //Console.WriteLine("NotFound!");
-                Console.ForegroundColor = ConsoleColor.Red;
-                perTempFils = Directory.GetFiles(@"C:\Users\GAURAV~1\AppData\Local\Temp\");
-                perTempFols = Directory.GetDirectories(@"C:\Users\GAURAV~1\AppData\Local\Temp\");
+                perTempFils = Directory.GetFiles(@"C:\Users\" + Environment.UserName + @"\AppData\Local\Temp\");
+                perTempFols = Directory.GetDirectories(@"C:\Users\" + Environment.UserName + @"\AppData\Local\Temp\");
 
                 tempFils = Directory.GetFiles(@"C:\Windows\Temp\");
                 tempFols = Directory.GetDirectories(@"C:\Windows\Temp\");
@@ -81,14 +59,20 @@ namespace GPTrashCleaner
                 preFils = Directory.GetFiles(@"C:\Windows\Prefetch\");
                 preFols = Directory.GetDirectories(@"C:\Windows\Prefetch\");
             }
+            catch {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("ERROR!");
+                Console.ReadLine();
+            }
 
             if (Console.ReadLine().ToUpper() == "YES")
             {
                 Console.Clear();
+                Console.Beep();
                 Delete1(perTempFils, perTempFols);
             }
         }
-
+        
         static void Delete1(string[] filesLoc, string[] foldersLoc) {
 
             Console.CursorVisible = false;
@@ -105,8 +89,8 @@ namespace GPTrashCleaner
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("");
                     Console.Write("> ");
-                    Console.ForegroundColor = ConsoleColor.DarkRed; ;
-                    Console.Write(foldersLoc[i]);
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.Write(filesLoc[i]);
                     Console.WriteLine("");
                 }
             }
